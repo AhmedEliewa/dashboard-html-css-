@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: sans-serif;
+}
+body {
+  background: black;
+  display: flex;
+}
+.menu {
+  padding: 20px;
+  height: 100vh;
+  background: #123;
+  width: 60px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.menu:hover {
+  width: 260px;
+}
+.menu .img {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  flex-shrink: 0;
+}
+.img img {
+  width: 100%;
+}
+
+.portfilo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.portfilo h2 {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+
+  height: 95%;
+  position: relative;
+}
+ul li a {
+  padding: 12px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+ul li a:hover,
+.data-info .box:hover,
+td:hover,
+.active {
+  background: #fffff666;
+  border-radius: 10px;
+}
+
+ul li a i {
+  font-size: 25px;
+}
+ul li a p {
+  text-transform: capitalize;
+}
+.log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.log-out a {
+  background-color: red;
+}
+.log-out a i {
+  font-size: 30px;
+}
+.content {
+  width: 100%;
+}
+.title-info {
+  display: flex;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgb(74, 74, 188);
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.data-info {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.data-info .box {
+  flex-basis: 210px;
+  height: 150px;
+  background: #123;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  flex-grow: 1;
+  transition: 0.5s;
+}
+.data-info .box i {
+  font-size: 25px;
+}
+.data p {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+th {
+  height: 50px;
+  background-color: gold;
+  border-radius: 10px;
+  color: #123;
+}
+td {
+  background-color: #123;
+  height: 50px;
+  border-radius: 10px;
+}
